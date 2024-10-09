@@ -2,16 +2,13 @@
 const buttonMenuMobile = document.querySelector(".header .inner-menu-mobile");
 if (buttonMenuMobile){
     const menu = document.querySelector(".header .inner-menu");
+    const overlay = menu.querySelector(".inner-overlay")
     buttonMenuMobile.onclick = () => {
-        const isShow = menu.getAttribute("show");
-        if (isShow == "yes")
-        {
-            menu.setAttribute("show", " ");
-        }
-        else
-        {
-            menu.setAttribute("show", "yes");
-        }
+        menu.setAttribute("show", "yes");
+    }
+
+    overlay.onclick = () => {
+        menu.setAttribute("show", "");
     }
 }
 // End Button Menu Mobile
