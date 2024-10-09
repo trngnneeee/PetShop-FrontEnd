@@ -191,6 +191,40 @@ a{
         display: none;
     }
 
+    .header .inner-menu[show = "yes"]{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        text-align: left;
+        z-index: 99;
+    }
+
+    .header .inner-menu[show = "yes"] .inner-overlay{
+        display: block;;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #0000004f;
+        cursor: pointer;
+    }
+
+    .header .inner-menu[show = "yes"] ul{
+        flex-direction: column;
+        gap: 15px;
+        background-color: #fff;
+        padding: 20px;
+        text-align: left;
+        width: 250px;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
     .header{
         display: flex;
         justify-content: space-between;
@@ -260,7 +294,7 @@ a{
     color: #002A48;
     font-weight: 700;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 
 .section1 .inner-content .inner-title .inner-title-main{
@@ -407,7 +441,7 @@ a{
     }
 
     .section1 .inner-image img{
-        z-index: 1;
+        /* z-index: 1; */
     }
 
     .section1 .inner-image .inner-bg3{
