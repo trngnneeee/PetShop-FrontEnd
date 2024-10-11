@@ -424,11 +424,11 @@ a{
 
 @media (max-width: 575.98px){
     .section1 .inner-content .inner-title .inner-title-main{
-        font-size: 46px;
+        font-size: 28px
     }
 
     .section1 .inner-content .inner-title .inner-title-sub{
-        font-size: 28px;
+        font-size: 19px;
     }
 
     .section1 .inner-content .inner-desc{
