@@ -203,13 +203,13 @@ a{
     }
 
     .header .inner-menu[show = "yes"] .inner-overlay{
-        display: block;;
+        background-color: #0000004f;
         width: 100%;
         height: 100%;
         position: absolute;
+        display: block;
         top: 0;
         left: 0;
-        background-color: #0000004f;
         cursor: pointer;
     }
 
