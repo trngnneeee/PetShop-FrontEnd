@@ -12,3 +12,5 @@ if (buttonMenuMobile){
     }
 }
 // End Button Menu Mobile
+
+AOS.init();
